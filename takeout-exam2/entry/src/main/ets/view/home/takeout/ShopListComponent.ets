@@ -18,8 +18,37 @@ export struct ShopListComponent {
       List({ space: 10, initialIndex: 0}){
         ForEach(this.takeoutViewModel.shopListData, (item: ShopModel, index: number) => {
           ListItem(){
+            Row(){
+              Image($r('app.media.' + item.image))//左边的图片
+                .width('32%')
+                .aspectRatio(1)
+                .borderRadius(10)
+                .margin({ right: 5 })
+              Column(){
+                //名称
+                Text(item.title)
+                //评分
+                ShopScoreComponent({item})
+                //配送费用信息
+                DeliveryInfoComponent({item})
+                //热销信息
+                HotSaleInfoComponent({item})
+                //评价信息
+                EvaluateComponent({item: item.evaluateList})
+              }
+              .alignItems(HorizontalAlign.Start)
+            }
+            .padding(10)
+            .backgroundColor($r('app.color.white'))
+            .width('100%')
+            .borderRadius(10)
+
 
           }
+          .id(`main_shop_listitem_${index}`)//为什么要这样给index
+          .onClick(() => {
+            this.takeoutViewModel.goDetail(item, this.pathStack)//跳转到详情页面
+          })
         })
       }
       // TODO: 考点6 - 外卖页面商家列表实现

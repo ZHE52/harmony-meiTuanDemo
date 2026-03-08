@@ -75,6 +75,10 @@ export default class ShopDetailViewModel {
    */
   rightOnScroll(index: number) {
     // TODO: 考点7 - 商品详情页左右列表联动功能实现
+    let typeIndex=this.shopGoodsData[index].typeIndex//拿到分类索引
+    this.typeIndex=typeIndex
+    this.goodsTypeScroller.scrollToIndex(typeIndex)
+
     // 功能要求：实现右侧商品列表滚动时，左侧分类列表自动高亮并滚动到对应位置
     // 实现步骤：
     // - 根据传入的商品索引index，从this.shopGoodsData数组中获取对应商品的typeIndex属性（分类索引）
@@ -85,9 +89,9 @@ export default class ShopDetailViewModel {
     // - 更新this.typeIndex后，左侧分类列表会自动高亮对应项
     // - 使用滚动控制器方法时，传入的参数是分类索引typeIndex
 
-    let typeIndex = this.shopGoodsData[index].typeIndex
-    this.typeIndex = typeIndex
-    this.goodsTypeScroller.scrollToIndex(typeIndex)
+    // let typeIndex = this.shopGoodsData[index].typeIndex
+    // this.typeIndex = typeIndex
+    // this.goodsTypeScroller.scrollToIndex(typeIndex)
   }
 
   /**
@@ -96,6 +100,13 @@ export default class ShopDetailViewModel {
    */
   typeChange(index: number) {
     // TODO: 考点8 - 商品详情页左侧分类点击联动功能实现
+
+    this.typeIndex= index
+    let typeIndex=this.getRightItemIndex(index)
+    if (typeIndex !==-1) {
+      this.goodsListScroller.scrollToIndex(typeIndex)
+    }
+
     // 功能要求：实现左侧分类点击时，右侧商品列表自动滚动到对应商品位置
     // 实现步骤：
     // - 将传入的分类索引index赋值给this.typeIndex，实现左侧分类高亮
@@ -107,11 +118,11 @@ export default class ShopDetailViewModel {
     // - 必须先判断返回值是否为-1，避免滚动到错误位置
     // - 更新this.typeIndex后，左侧分类列表会自动高亮对应项
 
-    this.typeIndex = index
-    let itemIndex = this.getRightItemIndex(index)
-    if (itemIndex !== -1) {
-      this.goodsListScroller.scrollToIndex(itemIndex)
-    }
+    // this.typeIndex = index
+    // let itemIndex = this.getRightItemIndex(index)
+    // if (itemIndex !== -1) {
+    //   this.goodsListScroller.scrollToIndex(itemIndex)
+    // }
   }
 
   /**
@@ -121,6 +132,7 @@ export default class ShopDetailViewModel {
    */
   getRightItemIndex(typeIndex: number): number {
     // TODO: 考点9 - 根据分类索引查找首个商品索引功能实现
+
     // 功能要求：根据传入的分类索引，在商品列表中查找并返回该分类下首个商品的索引位置
     // 实现步骤：
     // - 声明一个变量findIndex并初始化为-1，用于存储找到的商品索引（-1表示未找到）
