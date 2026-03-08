@@ -15,6 +15,13 @@ export struct ShopListComponent {
 
   build() {
     Column() {
+      List({ space: 10, initialIndex: 0}){
+        ForEach(this.takeoutViewModel.shopListData, (item: ShopModel, index: number) => {
+          ListItem(){
+
+          }
+        })
+      }
       // TODO: 考点6 - 外卖页面商家列表实现
       // 功能要求：实现外卖页面的商家列表展示和点击跳转功能
       // 数据源：this.takeoutViewModel.shopListData（返回ShopModel数组）
@@ -46,43 +53,46 @@ export struct ShopListComponent {
       // - 必须为ListItem绑定点击事件，不能为内部子组件绑定
       // - 必须正确设置ListItem的id属性，确保测试通过
       // - 内部的详细布局代码已实现，只需在正确位置调用即可
-      List({ space: 10, initialIndex: 0 }) {
-        ForEach(this.takeoutViewModel.shopListData, (item: ShopModel, index: number) => {
-          ListItem() {
-            Row() {
-              //左边的图片
-              Image($r('app.media.' + item.image))
-                .width('32%')
-                .aspectRatio(1)
-                .borderRadius(10)
-                .margin({ right: 5 })
-              Column() {
-                //名称
-                Text(item.title)
-                  .fontSize(15).fontColor($r('app.color.normal_text'))
-                  .fontWeight(FontWeight.Bold)
-                //评分
-                ShopScoreComponent({ item })
-                //配送费用信息
-                DeliveryInfoComponent({ item })
-                //热销信息
-                HotSaleInfoComponent({ item })
-                //评价信息
-                EvaluateComponent({ item: item.evaluateList })
-              }
-              .alignItems(HorizontalAlign.Start)
-            }
-            .padding(10)
-            .backgroundColor($r('app.color.white'))
-            .width('100%')
-            .borderRadius(10)
-          }
-          .id(`main_shop_listitem_${index}`)
-          .onClick(() => {
-            this.takeoutViewModel.goDetail(item, this.pathStack)
-          })
-        }, (item: ShopModel) => item.title)
-      }
+
+
+
+      // List({ space: 10, initialIndex: 0 }) {
+      //   ForEach(this.takeoutViewModel.shopListData, (item: ShopModel, index: number) => {
+      //     ListItem() {
+      //       Row() {
+      //         //左边的图片
+      //         Image($r('app.media.' + item.image))
+      //           .width('32%')
+      //           .aspectRatio(1)
+      //           .borderRadius(10)
+      //           .margin({ right: 5 })
+      //         Column() {
+      //           //名称
+      //           Text(item.title)
+      //             .fontSize(15).fontColor($r('app.color.normal_text'))
+      //             .fontWeight(FontWeight.Bold)
+      //           //评分
+      //           ShopScoreComponent({ item })
+      //           //配送费用信息
+      //           DeliveryInfoComponent({ item })
+      //           //热销信息
+      //           HotSaleInfoComponent({ item })
+      //           //评价信息
+      //           EvaluateComponent({ item: item.evaluateList })
+      //         }
+      //         .alignItems(HorizontalAlign.Start)
+      //       }
+      //       .padding(10)
+      //       .backgroundColor($r('app.color.white'))
+      //       .width('100%')
+      //       .borderRadius(10)
+      //     }
+      //     .id(`main_shop_listitem_${index}`)
+      //     .onClick(() => {
+      //       this.takeoutViewModel.goDetail(item, this.pathStack)
+      //     })
+      //   }, (item: ShopModel) => item.title)
+      // }
     }
     .margin({ top: 10 })
     .padding({ left: 10, right: 10 })

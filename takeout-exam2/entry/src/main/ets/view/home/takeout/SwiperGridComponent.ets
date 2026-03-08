@@ -38,10 +38,10 @@ export struct SwiperGridComponent {
       // - 遍历时需要设置keyGenerator函数，将数据项转换为JSON字符串作为唯一标识
       // - 本组件为纯展示组件，不需要实现点击事件
       Swiper() {
-        ForEach(this.takeoutViewModel.gridData, (pageData: Array<HomeGridModel>) => {
-          Grid() {
-            ForEach(pageData, (item: HomeGridModel) => {
-              GridItem() {
+        ForEach(this.takeoutViewModel.gridData,(pageDate:Array<HomeGridModel>)=>{ //后面这一坨屎箭头函数,pageData是后面剪头函数的名字，，后面是类型
+          Grid(){
+            ForEach(pageDate,(item:HomeGridModel)=>{
+              GridItem(){
                 Column() {
                   Image($r(`app.media.${item.uri}`))
                     .width(40)
@@ -54,10 +54,11 @@ export struct SwiperGridComponent {
                 .padding({ top: 10, bottom: 10 })
               }
               .width('20%')
-            }, (item: HomeGridModel) => JSON.stringify(item))
-          }
-          .margin({ bottom: 20 })
+            }, (item: HomeGridModel) => JSON.stringify(item))//这里我又不懂了，这是剪头函数中的大括号的，后面又给了一个东西这是啥
+          }.margin({ bottom: 20 })
+
         }, (item: Array<HomeGridModel>) => JSON.stringify(item))
+
       }
       .autoPlay(false)
       .loop(false)
