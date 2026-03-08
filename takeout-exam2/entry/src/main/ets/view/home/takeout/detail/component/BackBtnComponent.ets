@@ -4,8 +4,9 @@
 @Component
 export struct BackBtnComponent {
   @Consume pathStack: NavPathStack
-  uiContext: UIContext = this.getUIContext();
+//  uiContext: UIContext = this.getUIContext();
 
+  uiContext:UIContext=this.getUIContext();
   /**
    * 点击分享图标响应
    */
@@ -24,6 +25,10 @@ export struct BackBtnComponent {
       message: '分享成功',
       duration: 3000
     })
+    // this.uiContext.getPromptAction().showToast({
+    //   message: '分享成功',
+    //   duration: 3000
+    // })
   }
 
   build() {
