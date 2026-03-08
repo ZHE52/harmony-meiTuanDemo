@@ -1,0 +1,20 @@
+{
+  "routerMap": [
+    {
+      "name": "TakeoutPage",
+      "pageSourceFile": "src/main/ets/pages/TakeoutPage.ets",
+      "buildFunction": "TakeoutPageBuilder",
+      "data": {
+        "description": "this is TakeoutPage"
+      }
+    },
+    {
+      "name": "ShopDetailPage",
+      "pageSourceFile": "src/main/ets/pages/ShopDetailPage.ets",
+      "buildFunction": "ShopDetailPageBuilder",
+      "data": {
+        "description": "this is ShopDetailPage"
+      }
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "外卖"
+    },
+    {
+      "name": "tab_mt_text",
+      "value": "团团"
+    },
+    {
+      "name": "tab_message_text",
+      "value": "消息"
+    },
+    {
+      "name": "tab_order_text",
+      "value": "订单"
+    },
+    {
+      "name": "tab_mine_text",
+      "value": "我的"
+    },
+    {
+      "name": "city_text",
+      "value": "深圳"
+    },
+    {
+      "name": "search_text",
+      "value": "麦当劳"
+    },
+    {
+      "name": "search_btn",
+      "value": "搜索"
+    },
+    {
+      "name": "takeout_text",
+      "value": "外卖"
+    },
+    {
+      "name": "more_text",
+      "value": "更多"
+    },
+    {
+      "name": "mtzs_text",
+      "value": "团团专送"
+    },
+    {
+      "name": "mtks_text",
+      "value": "团团快送"
+    },
+    {
+      "name": "start_text",
+      "value": "起送 ¥"
+    },
+    {
+      "name": "deliv_text",
+      "value": " 配送 ¥"
+    },
+    {
+      "name": "deliv_free",
+      "value": "免配送费"
+    },
+    {
+      "name": "collect_text",
+      "value": "收藏"
+    },
+    {
+      "name": "send_text",
+      "value": "配送约"
+    },
+    {
+      "name": "shop_msg",
+      "value": "公告："
+    },
+    {
+      "name": "shop_notice",
+      "value": "【暖意浓浓】我们在意，您的声音!如果您对外卖订单有任何不满意或其他建议，可以拨打门店电话联系我们，我们会尽快为您处理"
+    },
+    {
+      "name": "tab_book",
+      "value": "点菜"
+    },
+    {
+      "name": "tab_combo",
+      "value": "套餐"
+    },
+    {
+      "name": "tab_eval",
+      "value": "评价"
+    },
+    {
+      "name": "search_text2",
+      "value": "搜索"
+    },
+    {
+      "name": "money_flag",
+      "value": "¥"
+    },
+    {
+      "name": "money_start",
+      "value": "起"
+    },
+    {
+      "name": "select_size",
+      "value": "选规格"
+    },
+    {
+      "name": "text_evel_score",
+      "value": "商家评分"
+    },
+    {
+      "name": "text_deliv",
+      "value": "配送评分"
+    },
+    {
+      "name": "text_taste",
+      "value": "口味"
+    },
+    {
+      "name": "text_package",
+      "value": "包装"
+    },
+    {
+      "name": "all_type_text",
+      "value": "全部"
+    },
+    {
+      "name": "goods_price",
+      "value": "商品价"
+    },
+    {
+      "name": "go_buy",
+      "value": "立即购买"
+    },
+    {
+      "name": "type1_text",
+      "value": "招牌"
+    },
+    {
+      "name": "type2_text",
+      "value": "新品"
+    },
+    {
+      "name": "prev_text",
+      "value": "预估加配送费0.5"
+    },
+    {
+      "name": "money_text",
+      "value": "20起送"
+    }
+  ]
+}

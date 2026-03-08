@@ -1,0 +1,140 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "main_theme",
+      "value": "#ffd21b"
+    },
+    {
+      "name": "main_theme1",
+      "value": "#ffe853"
+    },
+    {
+      "name": "pink",
+      "value": "#fc265d"
+    },
+    {
+      "name": "tabGray",
+      "value": "#707070"
+    },
+    {
+      "name": "split_gray",
+      "value": "#aaa"
+    },
+    {
+      "name": "gray_text",
+      "value": "#ccc"
+    },
+    {
+      "name": "gray_text2",
+      "value": "#aaa"
+    },
+    {
+      "name": "text_bg_yellow",
+      "value": "#ffde1c"
+    },
+    {
+      "name": "text_under",
+      "value": "#f9e329"
+    },
+    {
+      "name": "text_bg_gray",
+      "value": "#222"
+    },
+    {
+      "name": "tabNormal",
+      "value": "#505050"
+    },
+    {
+      "name": "normal_text",
+      "value": "#333"
+    },
+    {
+      "name": "gray_bg",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "gray_bg2",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "red",
+      "value": "#ff0000"
+    },
+    {
+      "name": "text_bg1",
+      "value": "#e6bd86"
+    },
+    {
+      "name": "score_color",
+      "value": "#ea6416"
+    },
+    {
+      "name": "delivery_text",
+      "value": "#3b1a01"
+    },
+    {
+      "name": "text_bg2",
+      "value": "#fbf6e9"
+    },
+    {
+      "name": "gray3",
+      "value": "#eee"
+    },
+    {
+      "name": "gray_d",
+      "value": "#ddd"
+    },
+    {
+      "name": "text_2",
+      "value": "#866d3e"
+    },
+    {
+      "name": "bg2",
+      "value": "#fffae8"
+    },
+    {
+      "name": "text2",
+      "value": "#FF8C00"
+    },
+    {
+      "name": "text_bg",
+      "value": "#fff9ea"
+    },
+    {
+      "name": "text_color3",
+      "value": "#eeb62b"
+    },
+    {
+      "name": "btn_yellow",
+      "value": "#fed453"
+    },
+    {
+      "name": "bg_f6",
+      "value": "#f6f6f5"
+    },
+    {
+      "name": "bg_trans",
+      "value": "#222"
+    },
+    {
+      "name": "black",
+      "value": "#000"
+    },
+    {
+      "name": "bg_green",
+      "value": "#33FFDD"
+    },
+    {
+      "name": "bg_yellow",
+      "value": "#FFFF77"
+    }
+  ]
+}

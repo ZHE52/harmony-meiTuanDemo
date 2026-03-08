@@ -1,0 +1,346 @@
+import { ShopGoodsModel } from '../model/ShopGoodsModel'
+
+/**
+ * 外卖详情页商品数据
+ */
+export const ShopGoodsData: Array<ShopGoodsModel> = [
+  {
+    title: '霸气杨枝甘露',
+    typeIndex: 0,
+    image: 'food_01',
+    type: '',
+    turnover: '月售200+',
+    activity: ['补贴给力'],
+    price: 20,
+    goodEval: ''
+  },
+  {
+    title: '金色山脉珍珠奶茶',
+    image: 'food_02',
+    typeIndex: 0,
+    redText: true,
+    type: '',
+    turnover: '月售100+',
+    activity: ['密香味红茶', '0植脂末'],
+    price: 17,
+    goodEval: ''
+  },
+  {
+    title: '咸法酪米布布鲜奶茶',
+    image: 'food_03',
+    typeIndex: 0,
+    type: '',
+    turnover: '月售100+',
+    activity: ['10+回头客推荐'],
+    price: 20,
+    goodEval: ''
+  },
+  {
+    title: '浓抹干酪米布布鲜奶茶',
+    image: 'food_04',
+    typeIndex: 0,
+    type: '',
+    turnover: '月售100+',
+    quantity: '1人份',
+    price: 20,
+    goodEval: ''
+  },
+  {
+    title: '生可可融雪米布布',
+    image: 'food_05',
+    typeIndex: 0,
+    type: '2',
+    turnover: '月售98',
+    quantity: '1人份',
+    price: 20,
+    goodEval: ''
+  },
+
+
+  {
+    title: '茉莉初雪奶茶',
+    image: 'food_08',
+    typeIndex: 0,
+    type: '',
+    turnover: '月售100+',
+    activity: ['伏天茉莉', '白毫绿茶', '金茶奖'],
+    price: 17,
+    goodEval: ''
+  },
+  {
+    title: '暖意融融双杯套餐',
+    image: 'food_01_01',
+    typeIndex: 1,
+    type: '2',
+    turnover: '月售18',
+    activity: ['8折', '限3份'],
+    price: 32,
+    goodEval: ''
+  },
+  {
+    title: '双杯蓝莓桑葚酸奶昔套餐',
+    image: 'food_01_02',
+    typeIndex: 1,
+    type: '2',
+    turnover: '月售0',
+    activity: ['8折', '限3份'],
+    price: 38,
+    goodEval: ''
+  },
+  {
+    title: '奈雪瘦瘦小绿瓶双杯套餐',
+    image: 'food_01_03',
+    typeIndex: 1,
+    type: '2',
+    turnover: '月售0',
+    activity: ['8折', '限2份'],
+    price: 30,
+    goodEval: ''
+  },
+  {
+    title: '生可可融雪米布布',
+    image: 'food_02_01',
+    typeIndex: 2,
+    type: '2',
+    turnover: '月售100+',
+    activity: ['8折', '限2份'],
+    price: 20,
+    goodEval: ''
+  },
+  {
+    title: '生可可双杯蓝莓桑葚酸奶昔套餐',
+    image: 'food_02_02',
+    typeIndex: 2,
+    type: '2',
+    turnover: '月售30',
+    activity: ['8折', '限2份'],
+    price: 18,
+    goodEval: ''
+  },
+  {
+    title: '生可可奈雪瘦瘦小绿瓶双杯套餐',
+    image: 'food_02_03',
+    typeIndex: 2,
+    type: '2',
+    turnover: '月售18',
+    activity: ['8折', '限2份'],
+    price: 32,
+    goodEval: ''
+  },
+  {
+    title: '奈雪瘦瘦小绿瓶',
+    image: 'food_03_01',
+    typeIndex: 3,
+    type: '1',
+    turnover: '月售400+',
+    activity: ['店内复购第1名'],
+    price: 20,
+    goodEval: '好评度100%'
+  },
+  {
+    title: '小绿瓶单杯烘焙套餐',
+    image: 'food_03_02',
+    typeIndex: 3,
+    type: '1',
+    turnover: '月售5',
+    activity: ['店内复购第1名'],
+    price: 28,
+    goodEval: '好评度100%'
+  },
+  {
+    title: '霸气不加糖血橙鲜柚',
+    image: 'food_04_01',
+    typeIndex: 4,
+    type: '1',
+    turnover: '月售400+',
+    activity: ['店内复购第1名'],
+    price: 20,
+    goodEval: '好评度100%'
+  },
+  {
+    title: '霸气四重莓果桑葚冰茶',
+    image: 'food_04_02',
+    typeIndex: 4,
+    type: '1',
+    turnover: '月售400+',
+    activity: ['店内复购第1名'],
+    price: 20,
+    goodEval: '好评度100%'
+  },
+  {
+    //蔬果酸奶昔
+    title: '66颗蓝莓桑葚酸奶昔',
+    image: 'food_06',
+    typeIndex: 5,
+    type: '1',
+    turnover: '月售400+',
+    activity: ['店内复购第1名'],
+    price: 20,
+    goodEval: '好评度100%'
+  },
+  {
+    title: '杨枝甘露酸奶昔',
+    image: 'food_01',
+    typeIndex: 5,
+    type: '1',
+    turnover: '月售400+',
+    activity: ['店内复购第1名'],
+    price: 20,
+    goodEval: '好评度100%'
+  },
+  {
+    title: '超能牛油果酸奶昔',
+    image: 'food_05_01',
+    typeIndex: 5,
+    type: '1',
+    turnover: '月售400+',
+    activity: ['店内复购第1名'],
+    price: 20,
+    goodEval: '好评度100%'
+  },
+  {
+    title: '黑珍珠鲜乳茶',
+    image: 'food_06_01',
+    typeIndex: 6,
+    type: '1',
+    turnover: '月售400+',
+    activity: ['店内复购第1名'],
+    price: 20,
+    goodEval: '好评度100%'
+  },
+  {
+    title: '咸法布布鲜乳茶',
+    image: 'food_06_02',
+    typeIndex: 6,
+    type: '1',
+    turnover: '月售400+',
+    activity: ['店内复购第1名'],
+    price: 20,
+    goodEval: '好评度100%'
+  },
+  {
+    title: '美式咖啡',
+    image: 'food_07_01',
+    typeIndex: 7,
+    type: '1',
+    turnover: '月售400+',
+    activity: ['店内复购第1名'],
+    price: 16,
+    goodEval: '好评度100%'
+  },
+  {
+    title: '拿铁咖啡',
+    image: 'food_07_02',
+    typeIndex: 7,
+    type: '1',
+    turnover: '月售400+',
+    activity: ['店内复购第1名'],
+    price: 23,
+    goodEval: '好评度100%'
+  },
+  {
+    title: '生椰拿铁',
+    image: 'food_07_03',
+    typeIndex: 7,
+    type: '1',
+    turnover: '月售400+',
+    activity: ['店内复购第1名'],
+    price: 26,
+    goodEval: '好评度100%'
+  },
+  {
+    //软欧面包
+    title: '猪扒滑蛋谷物贝果面包',
+    image: 'food_09_01',
+    typeIndex: 8,
+    type: '',
+    turnover: '月售21',
+    price: 17,
+    pricePoint: '.8',
+    goodEval: '',
+    quantity: '1人份',
+  },
+  {
+    title: '多谷物火腿蛋贝果面包',
+    image: 'food_09_02',
+    typeIndex: 8,
+    type: '',
+    turnover: '月售26',
+    price: 16,
+    pricePoint: '.8',
+    goodEval: '',
+    quantity: '1人份',
+  },
+  {
+    title: '松松咸蛋黄嘟嘟面包',
+    image: 'food_09_03',
+    typeIndex: 8,
+    type: '',
+    turnover: '月售64',
+    price: 14,
+    pricePoint: '.8',
+    goodEval: '100%',
+    quantity: '1人份',
+    activity: ['店内好评第2名'],
+  },
+  {
+    //蛋糕甜点
+    title: '大颗蓝莓乳酪贝果蛋糕',
+    image: 'food_09_04',
+    typeIndex: 9,
+    type: '',
+    turnover: '月售35',
+    price: 14,
+    pricePoint: '.8',
+    goodEval: '',
+    quantity: '1人份',
+  },
+  {
+    title: '南瓜嘟嘟蛋糕',
+    image: 'food_09_05',
+    typeIndex: 9,
+    type: '',
+    turnover: '月售52',
+    price: 14,
+    pricePoint: '.8',
+    goodEval: '',
+    quantity: '1人份',
+    activity: ['点评网友推荐'],
+  },
+  {
+    title: '鸭屎香单丛(袋泡茶)',
+    image: 'food_12_01',
+    typeIndex: 10,
+    type: '',
+    turnover: '月售52',
+    price: 12,
+    pricePoint: '.8',
+    goodEval: '',
+    quantity: '1人份',
+    activity: ['点评网友推荐'],
+  },
+  {
+    title: '蛋仔饼',
+    image: 'food_12_02',
+    typeIndex: 10,
+    type: '',
+    turnover: '月售52',
+    price: 14,
+    pricePoint: '.8',
+    goodEval: '',
+    quantity: '1人份',
+    activity: ['点评网友推荐'],
+  },
+  {
+    title: '芝士酥条',
+    image: 'food_12_03',
+    typeIndex: 10,
+    type: '',
+    turnover: '月售52',
+    price: 16,
+    pricePoint: '.8',
+    goodEval: '',
+    quantity: '1人份',
+    activity: ['点评网友推荐'],
+  },
+]
